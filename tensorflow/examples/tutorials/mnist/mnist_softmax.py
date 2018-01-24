@@ -45,6 +45,7 @@ def main(_):
   # Define loss and optimizer
   y_ = tf.placeholder(tf.float32, [None, 10])
 
+  # Understand raw formulation and the built-in function
   # The raw formulation of cross-entropy,
   #
   #   tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(tf.nn.softmax(y)),
